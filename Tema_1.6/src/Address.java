@@ -1,25 +1,18 @@
-public class Address {
+public class Address{
     private String street;
     private String town;
-    public Address(String street,String town)
+    public Address(String street,String town) {
+        this.street=street;
+        this.town=town;
+    }
+    public void setAddress(String street,String town)
     {
         this.street=street;
         this.town=town;
     }
-    public String getStreet()
+    public String getAddress(String street,String town)
     {
-        return street;
+        return "The adreess is: "+street+ " ,"+town+"\n";
     }
 
-    public String getTown() {
-        return town;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-    public void setTown(String town)
-    {
-        this.town=town;
-    }
 }

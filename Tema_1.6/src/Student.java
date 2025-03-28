@@ -1,11 +1,9 @@
-public class Student extends Person {
-    private int ID;
-    public Student (String name,String age,Address address,int ID)
+public class Student extends Person{
+    private String  ID;
+    public Student(String name,Address address,String ID)
     {
-        super(name,age,address);
         this.ID=ID;
     }
-   public int getID(){
-        return ID;
-   }
+    public String getID(){return ID;}
+
 }
