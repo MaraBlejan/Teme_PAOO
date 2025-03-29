@@ -14,20 +14,47 @@ public class Course{
     {
     return new Course(courseName,teachers,students);
     }
-    public void removeStudentFromCourse(String name,String courseName)
+    public void   removeStudentFromCourse(Student student)
     {
-        students.remove(name);
+      students.remove(student);
     }
-    public void removeTeacherFromCourse(String name,String courseName)
+    public void removeTeacherFromCourse(Teacher teacher)
     {
-        students.remove(name);
+     teachers.remove(teacher);
     }
-    public void addStudentToCourse(String name,String courseName,Address address,String id)
+    public void addStudentToCourse(Student student)
     {
-        students.add(new Student(name,address,id));
+        students.add(student);
     }
-    public void addTeacherToCourse(String name,String courseName,Address address,String subject)
+    public void addTeacherToCourse(Teacher teacher)
     {
-        teachers.add(new Teacher(name,address,subject));
+        teachers.add(teacher);
     }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public List<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    public void setTeachers(List<Teacher> teachers) {
+        this.teachers = teachers;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+
+    }
+
+
 }

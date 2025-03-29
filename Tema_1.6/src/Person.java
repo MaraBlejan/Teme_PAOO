@@ -3,7 +3,7 @@ public class Person {
     protected  String name;
     protected Address address;
 
-    public Person (String name,Address adress)
+    public Person (String name,Address address)
     {
         this.name=name;
         this.address=address;
@@ -11,4 +11,16 @@ public class Person {
     public Person(){}
 
     public String getName(){return name;}
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
